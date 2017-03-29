@@ -39,11 +39,11 @@ RSpec.describe "The FlightSchool application" do
   end
 
   it "has a JSON API" do
-    get "/api/airports/BRU"
+    get "/api/airports/SFO"
     expect(last_response).to be_ok
 
     parsed_body = JSON.parse(last_response.body)
 
-    expect(parsed_body["city"]).to eq("Brussels")
+    expect(parsed_body["city"]).to eq("San Francisco")
   end
 end
