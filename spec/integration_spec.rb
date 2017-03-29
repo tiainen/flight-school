@@ -44,6 +44,6 @@ RSpec.describe "The FlightSchool application" do
 
     parsed_body = JSON.parse(last_response.body)
 
-    expect(parsed_body["city"]).to eq("San Francisco")
+    expect(parsed_body["city"]).to eq("Brussels")
   end
 end
